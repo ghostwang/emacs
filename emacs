@@ -23,7 +23,7 @@
 
 ;;Personal information
 (setq user-full-name "ghostwang")
-(setq user-mail-address "dig2dick(at)gmail.com") 
+(setq user-mail-address "mine4ghost(at)gmail.com") 
 
 ;;======================    time setting        =====================
 ;;启用时间显示设置，在minibuffer上面的那个杠上（忘了叫什么来着）
@@ -164,6 +164,7 @@
 
 ;;隐藏工具栏
 ;;(tool-bar-mode nil) 
+(tool-bar-mode t)
     
 ;;去掉菜单栏，将F10绑定为显示菜单栏，需要菜单栏了可以摁F10调出，再摁F10就去掉菜单
 ;;(menu-bar-mode nil)
@@ -1053,3 +1054,4 @@ auto-mode-alist))
     (message "format successfully"))
 ;;band to f7
 (global-set-key [f7] 'indent-whole)
+

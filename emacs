@@ -623,7 +623,7 @@ auto-mode-alist))
 ;;(add-to-list 'interpreter-mode-alist '("miniperl" . cperl-mode))
 
 ;; turn autoindenting on
-(global-set-key "\t" 'newline-and-indent)
+;;(global-set-key "\t" 'newline-and-indent)
 
 ;; Use 4 space indents via cperl mode
 (custom-set-variables
@@ -1046,10 +1046,10 @@ auto-mode-alist))
 (load-theme 'tango t)
 (global-hl-line-mode 1)
 (global-set-key [(control o)] 'open-line)
-;;auto format function
-(defun indent-whole()
-  (interactive)
-  (indent-region (point-min)(point-max))
-  (message "format successfully"))
-;; bind to f7
+;;auto format
+(defun indent-whole ()
+    (interactive)
+    (indent-region (point-min)(point-max))
+    (message "format successfully"))
+;;band to f7
 (global-set-key [f7] 'indent-whole)

@@ -1072,3 +1072,8 @@ auto-mode-alist))
 
 (global-set-key (kbd "C-c SPC") 'goto-last-edit-point)
 
+(add-to-list 'load-path "~/.emacs.d/plugins/slime-master")
+(require 'slime-autoloads)
+
+(setq inferior-lisp-program "/usr/bin/sbcl")
+(setq slime-contribs '(slime-fancy))

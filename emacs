@@ -524,7 +524,7 @@ auto-mode-alist))
 ;;Define own hook
 (defun MyCppHook ()
 (setq indent-tabs-mode nil)
-(setq global-hl-line-mode t)
+(setq global-hl-line-mode nil)
 (c-set-style "MyCppStyle"))                                   ;;设置这个hook对应于MyCppStyle
 (add-hook 'c++-mode-hook 'MyCppHook)                ;;将此hook应用于所有的c++模式。
 
